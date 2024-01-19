@@ -4,6 +4,7 @@ import pages.HomePage;
 import pages.WebAutomationPage;
 import pages.alerts.AlertTypes_Page;
 import pages.autocomplete.Autocomplete_Accent_Folding_Page;
+import pages.controlgroup.ToolbarTab;
 import pages.dialog.Dialog_Modal_Form_Page;
 import pages.draggable.AutoScrolling_Page;
 import pages.draggable.ConstrainMovement;
@@ -48,6 +49,8 @@ public class Pages {
     private Resizable_Text_Area_Page textAreaPage;
     private Selectable_DefFunc_Page selectableDefFuncPage;
     private Selectable_Serialize_Page serializePage;
+
+    private ToolbarTab toolbarTab;
     private WebAutomationPage webAutomationPage;
 
     public Pages() {
@@ -73,6 +76,11 @@ public class Pages {
         iconsPage = new Menu_Icons_Page();
         downLoadingPage = new Progress_Bar_DownLoading_Page();
         modalFormPage = new Dialog_Modal_Form_Page();
+        toolbarTab = new ToolbarTab();
+    }
+
+    public ToolbarTab getToolbarTab() {
+        return toolbarTab;
     }
 
     public Dialog_Modal_Form_Page getModalFormPage() {
@@ -137,7 +145,6 @@ public class Pages {
     public Resizable_Text_Area_Page getTextAreaPage() {
         return textAreaPage;
     }
-
     public Progress_Bar_DownLoading_Page getDownLoadingPage() {
         return downLoadingPage;
     }

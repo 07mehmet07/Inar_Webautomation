@@ -15,6 +15,7 @@ public class WebAutomationPage extends BasePage {
 
     @FindBy(linkText = "Accent Folding")
     private WebElement accentFoldingLink;
+
     @FindBy(linkText = "Draggable")
     private WebElement draggableLink;
 
@@ -29,6 +30,9 @@ public class WebAutomationPage extends BasePage {
 
     @FindBy(linkText = "Resizable")
     private WebElement resizableLink;
+
+    @FindBy(linkText = "Control Group")
+    private WebElement controlGroup;
 
     @FindBy(linkText = "Textarea")
     private WebElement textAreaLink;
@@ -63,8 +67,10 @@ public class WebAutomationPage extends BasePage {
 
     @FindBy(linkText = "Menu")
     private WebElement menuLink;
+
     @FindBy(linkText = "Progress Bar")
     private WebElement progressBarLink;
+
     @FindBy(linkText = "Download Dialog")
     private WebElement downloadDialogLink;
 
@@ -77,6 +83,10 @@ public class WebAutomationPage extends BasePage {
     @FindBy(linkText = "Modal Form")
     private WebElement modalFormLink;
 
+
+    public void clickOnControlGroup() {
+        controlGroup.click();
+    }
 
     public void clickOnModalFormLink() {
         modalFormLink.click();
