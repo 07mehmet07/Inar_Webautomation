@@ -22,6 +22,16 @@ public class WebAutomationPage extends BasePage {
     @FindBy(linkText = "Default Functionality")
     private WebElement defaultFunctionalityLink;
 
+    @FindBy(linkText = "Datepicker")
+    private WebElement datePickerLink;
+
+    @FindBy(linkText = "Display Multiple Months")
+    private WebElement displayMultipleMonthsLink;
+
+    @FindBy(linkText = "Select Date Range")
+    private WebElement selectDateRangeLink;
+
+
     @FindBy(linkText = "Auto Scrolling")
     private WebElement autoScrollingLink;
 
@@ -78,11 +88,20 @@ public class WebAutomationPage extends BasePage {
     private WebElement iconsLink;
 
     @FindBy(linkText = "Dialog")
-    private  WebElement dialogLink;
+    private WebElement dialogLink;
 
     @FindBy(linkText = "Modal Form")
     private WebElement modalFormLink;
 
+    public void clickOnSelectDateRang() {selectDateRangeLink.click();}
+
+    public void clickOnDatepicker() {
+        datePickerLink.click();
+    }
+
+    public void clickOnDisplayMultipleMonths() {
+        displayMultipleMonthsLink.click();
+    }
 
     public void clickOnControlGroup() {
         controlGroup.click();
@@ -90,12 +109,10 @@ public class WebAutomationPage extends BasePage {
 
     public void clickOnModalFormLink() {
         modalFormLink.click();
-
     }
 
     public void clickOnDialogLink() {
         dialogLink.click();
-
     }
 
     public void clickOnAccentFolding() {
@@ -104,7 +121,6 @@ public class WebAutomationPage extends BasePage {
 
     public void clickOnIconsLink() {
         iconsLink.click();
-
     }
 
     public void clickOnAutoCompleteLink() {
