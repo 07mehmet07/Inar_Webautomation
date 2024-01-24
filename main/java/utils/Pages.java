@@ -5,6 +5,7 @@ import pages.WebAutomationPage;
 import pages.accordion.CollapseContentPage;
 import pages.alerts.AlertTypes_Page;
 import pages.autocomplete.Autocomplete_Accent_Folding_Page;
+import pages.buttons.WithIconPage;
 import pages.controlgroup.ToolbarTab;
 import pages.datepicker.DisplayMultipleMonthsPage;
 import pages.dialog.Dialog_Modal_Form_Page;
@@ -65,6 +66,8 @@ public class Pages {
     private ToolbarTab toolbarTab;
     private WebAutomationPage webAutomationPage;
 
+    private WithIconPage withIconPage;
+
     public Pages() {
         homePage = new HomePage();
         webAutomationPage = new WebAutomationPage();
@@ -94,7 +97,10 @@ public class Pages {
         spinnerOverflow = new SpinnerOverflow();
         snapToIncrements = new SnapToIncrements();
         collapseContentPage = new CollapseContentPage();
+        withIconPage = new WithIconPage();
     }
+
+    public WithIconPage getWithIconPage() {return withIconPage;}
 
     public CollapseContentPage getCollapseContentPage() {return collapseContentPage; }
 

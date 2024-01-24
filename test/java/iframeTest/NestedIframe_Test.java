@@ -21,12 +21,10 @@ public class NestedIframe_Test extends Hooks {
         //2. Click on webautomation link
         pages.getHomePage().clickOnWebAutomationLink();
 
-        BrowserUtils.scrollDownWithPageDown();
 
         //3.Click on Iframe link
         pages.getWebAutomationPage().clickOnIframeLink();
 
-        BrowserUtils.scrollUpWithPageUp();
 
         //4.Click on Nested Iframe link
         pages.getWebAutomationPage().clickOnNestedIframe();

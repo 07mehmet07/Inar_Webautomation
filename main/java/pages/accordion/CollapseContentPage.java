@@ -28,7 +28,7 @@ public class CollapseContentPage extends BasePage {
         BrowserUtils.wait(1);
     }
 
-    public boolean isContentPaneOpenFor() {
+    public boolean isDisplayed() {
         return textAreaForFirstSection.isDisplayed();
     }
 

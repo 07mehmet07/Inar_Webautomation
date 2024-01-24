@@ -111,14 +111,21 @@ public class WebAutomationPage extends BasePage {
     @FindBy(linkText = "Collapse Content")
     private WebElement collapseContentLink;
 
+    @FindBy(linkText = "Button")
+    private WebElement buttonLink;
+
+    @FindBy(linkText = "With Icon")
+    private WebElement withIconLink;
+
+    public void clickOnWithIconLink(){withIconLink.click();}
+
+    public void clickOnButtonLink(){buttonLink.click();}
 
     public void ClickOnCollapseContent(){
         collapseContentLink.click();
     }
 
-    public void ClickOnAcordion(){
-        acordionLink.click();;
-    }
+    public void ClickOnAcordion(){acordionLink.click();;}
 
     public void clickOnSpinnerOverFlowTab() {
         spinnerOverflowTab.click();
