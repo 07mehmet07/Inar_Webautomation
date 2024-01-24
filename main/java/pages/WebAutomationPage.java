@@ -93,7 +93,52 @@ public class WebAutomationPage extends BasePage {
     @FindBy(linkText = "Modal Form")
     private WebElement modalFormLink;
 
-    public void clickOnSelectDateRang() {selectDateRangeLink.click();}
+    @FindBy(linkText = "Slider")
+    private WebElement slider;
+
+    @FindBy(linkText = "Snap to increments")
+    private WebElement snapToIncrements;
+
+    @FindBy(linkText = "Spinner")
+    private WebElement spinner;
+
+    @FindBy(linkText = "Spinner Overflow")
+    private WebElement spinnerOverflowTab;
+
+    @FindBy(linkText = "Accordion")
+    private WebElement acordionLink;
+
+    @FindBy(linkText = "Collapse Content")
+    private WebElement collapseContentLink;
+
+
+    public void ClickOnCollapseContent(){
+        collapseContentLink.click();
+    }
+
+    public void ClickOnAcordion(){
+        acordionLink.click();;
+    }
+
+    public void clickOnSpinnerOverFlowTab() {
+        spinnerOverflowTab.click();
+    }
+
+    public void clickOnSpinnerTab() {
+        spinner.click();
+    }
+
+    public void clickOnSnapToIncrements() {
+        snapToIncrements.click();
+    }
+
+    public void clickOnSlider() {
+        slider.click();
+    }
+
+    public void clickOnSelectDateRang() {
+        selectDateRangeLink.click();
+    }
 
     public void clickOnDatepicker() {
         datePickerLink.click();

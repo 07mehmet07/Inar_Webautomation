@@ -2,6 +2,7 @@ package utils;
 
 import pages.HomePage;
 import pages.WebAutomationPage;
+import pages.accordion.CollapseContentPage;
 import pages.alerts.AlertTypes_Page;
 import pages.autocomplete.Autocomplete_Accent_Folding_Page;
 import pages.controlgroup.ToolbarTab;
@@ -25,6 +26,8 @@ import pages.resizable.Resizable_Text_Area_Page;
 import pages.selectable.Selectable_DefFunc_Page;
 import pages.selectable.Selectable_Serialize_Page;
 import pages.datepicker.SelectDateRange;
+import pages.slider.SnapToIncrements;
+import pages.spinner.SpinnerOverflow;
 
 public class Pages {
 
@@ -33,6 +36,8 @@ public class Pages {
     private Animate_Page animatePage;
     private Autocomplete_Accent_Folding_Page autocompleteAccentFoldingPage;
     private AutoScrolling_Page autoScrollingPage;
+
+    private CollapseContentPage collapseContentPage;
     private ConstrainMovement constrainMovement;
 
     private Dialog_Modal_Form_Page modalFormPage;
@@ -51,12 +56,12 @@ public class Pages {
     private Resizable_DefFunc_Page resizableDefFuncPage;
     private Resizable_Synchronous_Resize_Page synchronousResize;
     private Resizable_Text_Area_Page textAreaPage;
-
     private SelectDateRange selectDateRange;
-
     private Selectable_DefFunc_Page selectableDefFuncPage;
     private Selectable_Serialize_Page serializePage;
+    private SnapToIncrements snapToIncrements;
 
+    private SpinnerOverflow spinnerOverflow;
     private ToolbarTab toolbarTab;
     private WebAutomationPage webAutomationPage;
 
@@ -86,6 +91,19 @@ public class Pages {
         toolbarTab = new ToolbarTab();
         displayMultipleMonthsPage = new DisplayMultipleMonthsPage();
         selectDateRange = new SelectDateRange();
+        spinnerOverflow = new SpinnerOverflow();
+        snapToIncrements = new SnapToIncrements();
+        collapseContentPage = new CollapseContentPage();
+    }
+
+    public CollapseContentPage getCollapseContentPage() {return collapseContentPage; }
+
+    public SpinnerOverflow getSpinnerOverflow(){
+        return  spinnerOverflow;
+    }
+
+    public SnapToIncrements getSnapToIncrements(){
+        return snapToIncrements;
     }
 
     public SelectDateRange getSelectDateRange() {
