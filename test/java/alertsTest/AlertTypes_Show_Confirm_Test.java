@@ -1,9 +1,9 @@
 package alertsTest;
 
 import BaseTest.Hooks;
-import org.junit.jupiter.api.Test;
+import org.testng.annotations.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.testng.AssertJUnit.assertEquals;
 
 /**
  * 1. Land on home page

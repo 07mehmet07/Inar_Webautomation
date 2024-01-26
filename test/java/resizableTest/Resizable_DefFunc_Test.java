@@ -1,8 +1,8 @@
 package resizableTest;
 
 import BaseTest.Hooks;
-import org.assertj.core.api.Assertions;
-import org.junit.jupiter.api.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 /**
  * 1.Open the browser and navigate to the page
@@ -45,8 +45,8 @@ public class Resizable_DefFunc_Test extends Hooks {
 
 
         //5.Verify that the resizable element has been resized
-        Assertions.assertThat(finalWidth).isGreaterThan(initialWidth);
-        Assertions.assertThat(finalHeight).isGreaterThan(initialHeight);
+        Assert.assertTrue(finalWidth > initialWidth);
+        Assert.assertTrue(finalHeight > initialHeight);
 
     }
 }

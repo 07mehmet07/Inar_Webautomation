@@ -1,11 +1,9 @@
 package iframeTest;
 
 import BaseTest.Hooks;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
-import utils.BrowserUtils;
-import utils.Driver;
+import org.testng.annotations.Test;
 
+import static org.testng.Assert.assertEquals;
 /**
  * 1. Land on home page
  * 2. Click on webautomation link
@@ -35,7 +33,7 @@ public class NestedIframe_Test extends Hooks {
 
 
         String actualHeader = pages.getNestedIframePage().getHeaderInFrame();
-        Assertions.assertEquals(expectedHeader, actualHeader, "Wrong Header !");
+        assertEquals(expectedHeader, actualHeader);
 
 
     }

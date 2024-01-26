@@ -1,12 +1,13 @@
 package droppableTest;
 
 import BaseTest.Hooks;
-import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Point;
+import org.testng.annotations.Test;
 import utils.BrowserUtils;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertNotEquals;
+
 /**
  * 1. Open the browser and navigate to the page
  * 2. click on the droppable button

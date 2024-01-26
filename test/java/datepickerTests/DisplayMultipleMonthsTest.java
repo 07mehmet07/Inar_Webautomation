@@ -1,19 +1,20 @@
 package datepickerTests;
 
 import BaseTest.Hooks;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import static org.testng.AssertJUnit.assertEquals;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 public class DisplayMultipleMonthsTest extends Hooks {
 
-    @BeforeEach
+    @BeforeMethod
     void setUpTestEnvironment() {
         //1. Open the browser and navigate to the page
         pages.getHomePage().clickOnWebAutomationLink();
@@ -86,7 +87,7 @@ public class DisplayMultipleMonthsTest extends Hooks {
     }
 
 
-    @AfterEach
+    @AfterMethod
     void tearDownTestEnvironment() {
         pages.getWebAutomationPage().clickOnSelectDateRang();
     }

@@ -1,8 +1,9 @@
 package alertsTest;
 
 import BaseTest.Hooks;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+import org.testng.annotations.Test;
+
+import static org.testng.AssertJUnit.assertEquals;
 import utils.BrowserUtils;
 
 /**
@@ -39,7 +40,7 @@ public class AlertTypes_ShowAlert_Test extends Hooks {
         //6. verify that alert text is "This is an alert!"
         String expectedText = "This is an alert!";
         String actualText = pages.getAlertTypesPage().getTextOfTheAlert();
-        Assertions.assertEquals(expectedText, actualText, "Wrong Text Prompted !");
+        assertEquals(expectedText, actualText, "Wrong Text Prompted !");
 
         BrowserUtils.wait(2);
 

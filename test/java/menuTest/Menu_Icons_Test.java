@@ -1,12 +1,11 @@
 package menuTest;
 
 import BaseTest.Hooks;
-import org.junit.jupiter.api.Test;
-import org.openqa.selenium.Dimension;
+import org.testng.annotations.Test;
 
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.testng.AssertJUnit.assertTrue;
 
 /**
  * 1-Open the url and navigate to Icons link

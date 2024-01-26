@@ -1,11 +1,11 @@
 package draggableTests;
 
 import BaseTest.Hooks;
-import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Point;
+import org.testng.annotations.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.testng.AssertJUnit.assertEquals;
+import static org.testng.AssertJUnit.assertTrue;
 
 /**
  * 1- Open the url and navigate to the Web Automation
@@ -35,7 +35,7 @@ public class ConstrainMovementTest extends Hooks {
         int finalXForFirstDraggableElement = pages.getConstrainMovement().getLocationOfDraggable1().getX();
 
         //4- Verify that the first draggable element does not move
-        assertEquals(initialXForFirstDraggableElement,finalXForFirstDraggableElement,"First draggable element can not move horizontally");
+        assertEquals(initialXForFirstDraggableElement,finalXForFirstDraggableElement);
 
         //5- Drag the second draggable element to the below and drop
         int initialYForSecondDraggableElement = pages.getConstrainMovement().getLocationOfDraggable2().getY();
@@ -43,7 +43,7 @@ public class ConstrainMovementTest extends Hooks {
         int finalYForSecondDraggableElement = pages.getConstrainMovement().getLocationOfDraggable2().getY();
 
         //6- Verify that the second draggable element does not move
-        assertEquals(initialYForSecondDraggableElement,finalYForSecondDraggableElement,"Second draggable element can not move vertically");
+        assertEquals(initialYForSecondDraggableElement,finalYForSecondDraggableElement);
 
         //7- Drag the third draggable element to up and left and drop
         Point initialPointForThirdElement = pages.getConstrainMovement().getLocationOfDraggable3();
@@ -51,7 +51,7 @@ public class ConstrainMovementTest extends Hooks {
         Point finalPointForThirdElement = pages.getConstrainMovement().getLocationOfDraggable3();
 
         //8- Verify that the third draggable element does not move
-        assertEquals(initialPointForThirdElement,finalPointForThirdElement,"Third draggable element con not move to out of big box");
+        assertEquals(initialPointForThirdElement,finalPointForThirdElement);
 
         //9- Drag the fourth draggable element to up and left and drop
         pages.getConstrainMovement().dragFourthBox(-100,-100);

@@ -1,11 +1,11 @@
 package dialogTest;
 
 import BaseTest.Hooks;
-import org.junit.jupiter.api.Test;
+import org.testng.annotations.Test;
+
+import static org.testng.AssertJUnit.assertEquals;
 
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * 1-Open the url and navigate to page

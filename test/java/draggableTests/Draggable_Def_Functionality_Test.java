@@ -1,8 +1,8 @@
 package draggableTests;
 
 import BaseTest.Hooks;
-import org.assertj.core.api.Assertions;
-import org.junit.jupiter.api.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 import utils.Pages;
 
 public class Draggable_Def_Functionality_Test extends Hooks {
@@ -29,8 +29,7 @@ public class Draggable_Def_Functionality_Test extends Hooks {
         int finalX = pages.getDraggableDefFuncPage().getLocationOfDraggableX();
         int finalY = pages.getDraggableDefFuncPage().getLocationOfDraggableY();
 
-        Assertions.assertThat(finalX).isGreaterThan(initialX);
-        Assertions.assertThat(finalY).isGreaterThan(initialY);
-        //Assertions.assertTrue(finalX > initialX);
+        Assert.assertTrue(finalX > initialX);
+        Assert.assertTrue(finalY > initialY);
     }
 }

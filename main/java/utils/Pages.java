@@ -6,6 +6,7 @@ import pages.accordion.CollapseContentPage;
 import pages.alerts.AlertTypes_Page;
 import pages.autocomplete.Autocomplete_Accent_Folding_Page;
 import pages.buttons.WithIconPage;
+import pages.checkboxRadio.ProductSelector;
 import pages.controlgroup.ToolbarTab;
 import pages.datepicker.DisplayMultipleMonthsPage;
 import pages.dialog.Dialog_Modal_Form_Page;
@@ -28,6 +29,8 @@ import pages.selectable.Selectable_DefFunc_Page;
 import pages.selectable.Selectable_Serialize_Page;
 import pages.datepicker.SelectDateRange;
 import pages.slider.SnapToIncrements;
+import pages.sortable.DisplayAsGrid;
+import pages.sortable.IncludeAndExcludeItemsTab;
 import pages.spinner.SpinnerOverflow;
 
 public class Pages {
@@ -37,12 +40,11 @@ public class Pages {
     private Animate_Page animatePage;
     private Autocomplete_Accent_Folding_Page autocompleteAccentFoldingPage;
     private AutoScrolling_Page autoScrollingPage;
-
     private CollapseContentPage collapseContentPage;
     private ConstrainMovement constrainMovement;
-
     private Dialog_Modal_Form_Page modalFormPage;
 
+    private DisplayAsGrid displayAsGrid;
     private DisplayMultipleMonthsPage displayMultipleMonthsPage;
     private Draggable_DefFunc_Page draggableDefFuncPage;
     private Droppable_Accept_Page acceptPage;
@@ -52,7 +54,10 @@ public class Pages {
     private HomePage homePage;
     private Iframe_Nested_Page nestedIframePage;
     private Iframe_Normal_Page normalPage;
+
+    private IncludeAndExcludeItemsTab includeAndExcludeItemsTab;
     private Menu_Icons_Page iconsPage;
+    private ProductSelector productSelector;
     private Progress_Bar_DownLoading_Page downLoadingPage;
     private Resizable_DefFunc_Page resizableDefFuncPage;
     private Resizable_Synchronous_Resize_Page synchronousResize;
@@ -61,11 +66,9 @@ public class Pages {
     private Selectable_DefFunc_Page selectableDefFuncPage;
     private Selectable_Serialize_Page serializePage;
     private SnapToIncrements snapToIncrements;
-
     private SpinnerOverflow spinnerOverflow;
     private ToolbarTab toolbarTab;
     private WebAutomationPage webAutomationPage;
-
     private WithIconPage withIconPage;
 
     public Pages() {
@@ -98,17 +101,36 @@ public class Pages {
         snapToIncrements = new SnapToIncrements();
         collapseContentPage = new CollapseContentPage();
         withIconPage = new WithIconPage();
+        productSelector = new ProductSelector();
+        displayAsGrid = new DisplayAsGrid();
+        includeAndExcludeItemsTab = new IncludeAndExcludeItemsTab();
     }
 
-    public WithIconPage getWithIconPage() {return withIconPage;}
-
-    public CollapseContentPage getCollapseContentPage() {return collapseContentPage; }
-
-    public SpinnerOverflow getSpinnerOverflow(){
-        return  spinnerOverflow;
+    public IncludeAndExcludeItemsTab getIncludeAndExcludeItemsTab() {
+        return includeAndExcludeItemsTab;
     }
 
-    public SnapToIncrements getSnapToIncrements(){
+    public DisplayAsGrid getDisplayAsGrid() {
+        return displayAsGrid;
+    }
+
+    public ProductSelector getProductSelector() {
+        return productSelector;
+    }
+
+    public WithIconPage getWithIconPage() {
+        return withIconPage;
+    }
+
+    public CollapseContentPage getCollapseContentPage() {
+        return collapseContentPage;
+    }
+
+    public SpinnerOverflow getSpinnerOverflow() {
+        return spinnerOverflow;
+    }
+
+    public SnapToIncrements getSnapToIncrements() {
         return snapToIncrements;
     }
 

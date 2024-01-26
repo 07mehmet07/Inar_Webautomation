@@ -117,6 +117,44 @@ public class WebAutomationPage extends BasePage {
     @FindBy(linkText = "With Icon")
     private WebElement withIconLink;
 
+    @FindBy(linkText = "Checkbox Radio")
+    private WebElement checkboxRadio;
+
+    @FindBy(linkText = "Product Selector")
+    private WebElement productSelector;
+
+    @FindBy(linkText = "Sortable")
+    private WebElement sortable;
+
+    @FindBy(linkText = "Display as Grid")
+    private WebElement displayAsGrid;
+
+    @FindBy(linkText = "Include / exclude items")
+    private WebElement includeExcludeItems;
+
+
+    public void clickOnIncludeExcludeItems(){
+        includeExcludeItems.click();
+    }
+
+    public void clickOnDisplay(){
+        displayAsGrid.click();
+    }
+
+
+    public void clickOnSortable(){
+        sortable.click();
+    }
+
+    public void clickOnProductSelector(){
+        productSelector.click();
+    }
+
+
+    public void clickOncheckboxRadio(){
+        checkboxRadio.click();
+    }
+
     public void clickOnWithIconLink(){withIconLink.click();}
 
     public void clickOnButtonLink(){buttonLink.click();}

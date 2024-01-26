@@ -1,11 +1,9 @@
 package iframeTest;
 
 import BaseTest.Hooks;
-import org.junit.jupiter.api.Test;
-import utils.BrowserUtils;
+import org.testng.annotations.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
+import static org.testng.Assert.assertEquals;
 /**
  * 1. Land on home page
  * 2. Click on webautomation link

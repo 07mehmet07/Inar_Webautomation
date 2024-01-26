@@ -1,10 +1,13 @@
 package draggableTests;
 
 import BaseTest.Hooks;
-import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Point;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.testng.Assert.assertEquals;
+import static org.testng.AssertJUnit.assertTrue;
+
 /**
  * 1-Open the url and navigate to handles link
  * 2-Drag the first draggable element to the right and below and drop
@@ -46,8 +49,8 @@ public class Draggable_Handles_Test extends Hooks {
 
         //7-Verify the element that move from handle
         finalOfSecondDraggableElement = pages.getHandlesPage().locationOfSecondDraggableElement();
-        assertNotEquals(initialOfSecondDraggableElement.getX(), finalOfSecondDraggableElement.getX());
-        assertNotEquals(initialOfSecondDraggableElement.getY(), finalOfSecondDraggableElement.getY());
+        Assert.assertNotEquals(initialOfSecondDraggableElement.getX(), finalOfSecondDraggableElement.getX());
+        Assert.assertNotEquals(initialOfSecondDraggableElement.getY(), finalOfSecondDraggableElement.getY());
 
     }
 

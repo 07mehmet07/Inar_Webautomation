@@ -1,9 +1,9 @@
 package datepickerTests;
 
 import BaseTest.Hooks;
-import org.junit.jupiter.api.Test;
+import org.testng.annotations.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.testng.AssertJUnit.assertEquals;
 
 public class selectDateRangeTest extends Hooks {
 
@@ -69,6 +69,6 @@ public class selectDateRangeTest extends Hooks {
         int expectedCountOfSelectableDays = 24;
         int actualCountOfSelectableDays = pages.getSelectDateRange().getSelectableDayNumberInFirstMonthElement();
 
-        assertEquals(expectedCountOfSelectableDays, actualCountOfSelectableDays, "Count of selectable day is wrong!");
+        assertEquals(expectedCountOfSelectableDays, actualCountOfSelectableDays);
     }
 }

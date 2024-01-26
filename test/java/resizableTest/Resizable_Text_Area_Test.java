@@ -1,10 +1,10 @@
 package resizableTest;
 
 import BaseTest.Hooks;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+import org.testng.annotations.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.testng.AssertJUnit.assertEquals;
+import static org.testng.AssertJUnit.assertTrue;
 
 /**
  * 1.Open the browser and navigate to the page
@@ -47,8 +47,8 @@ public class Resizable_Text_Area_Test extends Hooks {
         int finalXSize =pages.getTextAreaPage().getSizeOfTextArea().getWidth();
         int finalYSize =pages.getTextAreaPage().getSizeOfTextArea().getHeight();
 
-        Assertions.assertTrue(finalXSize > initialXSize);
-        Assertions.assertTrue(finalYSize > initialYSize);
+        assertTrue(finalXSize > initialXSize);
+        assertTrue(finalYSize > initialYSize);
 
     }
 

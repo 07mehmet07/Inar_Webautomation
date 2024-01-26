@@ -1,9 +1,10 @@
 package resizableTest;
 
 import BaseTest.Hooks;
-import org.assertj.core.api.Assertions;
-import org.junit.jupiter.api.Test;
+import org.testng.annotations.Test;
 import utils.BrowserUtils;
+
+import static org.testng.Assert.assertTrue;
 
 /**
  * 1. Open the browser and navigate to the page
@@ -58,12 +59,12 @@ public class Animate_Test extends Hooks {
 
 
         //Verify that size1 is greater than initial size
-        Assertions.assertThat(width1).isGreaterThan(initialWidth);
-        Assertions.assertThat(height1).isGreaterThan(initialHeight);
+       assertTrue(width1 > initialWidth);
+       assertTrue(height1 > initialHeight);
 
         //Verify that size2 is greater than size1
-        Assertions.assertThat(width2).isGreaterThan(width1);
-        Assertions.assertThat(height2).isGreaterThan(height1);
+        assertTrue(width2 > initialWidth);
+        assertTrue(height2 > initialHeight);
 
     }
 }

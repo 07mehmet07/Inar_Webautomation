@@ -1,8 +1,8 @@
 package draggableTests;
 
 import BaseTest.Hooks;
-import org.assertj.core.api.Assertions;
-import org.junit.jupiter.api.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 import utils.Pages;
 
 /**
@@ -40,8 +40,9 @@ public class Draggable_AutoScrolling_Test extends Hooks {
         int finalX2 = pages.getAutoScrollingPage().getLocationOfSecondDraggableX();
         int finalX3 = pages.getAutoScrollingPage().getLocationOfThirdDraggableX();
 
-        Assertions.assertThat(finalX3).isLessThan(finalX2);
-        Assertions.assertThat(finalX2).isLessThan(finalX1);
+        Assert.assertTrue(finalX3 < finalX2);
+        Assert.assertTrue(finalX2 < finalX1);
+
 
     }
 }

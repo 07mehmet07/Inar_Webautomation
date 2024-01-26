@@ -1,10 +1,10 @@
 package controlgruopTest;
 
 import BaseTest.Hooks;
-import org.junit.jupiter.api.Test;
+import org.testng.annotations.Test;
 
-import static org.junit.jupiter.api.Assertions.assertNotEquals;
-
+import static org.testng.Assert.assertNotEquals;
+import static org.testng.AssertJUnit.assertEquals;
 /**
  * 1.Open the browser and navigate to the page
  * 2.Enter the "%150" for zoom , "Red" for background color and "Blue" for text color
